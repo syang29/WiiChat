@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/wiichat"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/plain_text_input1"
+                android:layout_height="70px"
+                android:layout_width="300px"
+                android:inputType="text"
+                android:hint="Enter Username"
+                android:background="@layout/border_typebox"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginBottom="2dp"/>
+
+            <CheckBox
+                android:id="@+id/checkbox_meat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember Username"
+                android:button="@layout/border_circlebox"
+                android:paddingLeft="2dp"
+                android:textColor="#920e6597"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/plain_text_input2"
+                android:layout_height="70px"
+                android:layout_width="300px"
+                android:inputType="text"
+                android:hint="Enter Password"
+                android:background="@layout/border_typebox"
+                android:gravity="center" />
+
+            <Button
+                android:gravity="center"
+                android:layout_marginRight="45dp"
+                android:layout_width="match_parent"
+                android:layout_height="55px"
+                android:text="Forgot ID/Passcode?"
+                android:textSize="12sp"
+                app:fontFamily="@font/opensans"
+                android:textColor="#92c70d29"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="55px"
+        android:text="Sign in"
+        android:textSize="17sp"
+        app:fontFamily="@font/opensans"
+        android:textColor="#ffffff"
+        android:background="@layout/border_login"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/anonButton"
+            android:layout_width="match_parent"
+            android:layout_height="55px"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@layout/border_login"
+            android:gravity="center"
+            android:onClick="anonButton"
+            android:text="Sign in as guest"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            app:fontFamily="@font/opensans" />
+
+        <Button
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="55px"
+            android:text="Create Account"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            app:fontFamily="@font/opensans"
+            android:textColor="#ffffff"
+            android:background="@layout/border_login"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="375px"
+            android:text="Space for ADS"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            app:fontFamily="@font/opensans"
+            android:textColor="#ffffff"
+            android:background="@layout/border_ads"/>
+
+        <Button
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="375px"
+            android:text="Space for ADS"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            android:onClick="anonButton"
+            app:fontFamily="@font/opensans"
+            android:textColor="#ffffff"
+            android:background="@layout/border_ads"/>
+
+    </LinearLayout>
+
+</LinearLayout>
